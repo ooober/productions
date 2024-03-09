@@ -1,1 +1,72 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+  <title>scripthub.lol</title>
+  <style>
+    body {
+      background: url("https://cf-ent-cache.nexuspipe.com/static/Background.svg") #000000;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      font-size: 3vw;
+      text-align: center;
+      margin-top: 2rem;
+      background: linear-gradient(to right, #FFA500, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .spinner {
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-top: 6px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-top: 1rem;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 5vw;
+      }
+    }
+  </style>
+  <script>
+    setTimeout(function(){
+      window.location.replace("http://discord.gg/productions");
+    }, 3500);
+  </script>
+</head>
+<body>
+  <img class="logo" src="https://i.ibb.co/Q9snH8d/919874-D6-A505-44-B3-8666-019063-A546-B5.png" alt="Logo">
+  <h1>Hold tight! We're redirecting you!</h1>
+  <div class="spinner"></div>
+</body>
+</html>
