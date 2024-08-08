@@ -11,18 +11,33 @@
             height: 100%;
             background-color: black;
             overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         iframe {
-            width: 90%; /* Adjust this value to make it wider or narrower */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
             border: none;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://form.jotform.com/242206791092253" allowfullscreen></iframe>
+    <iframe id="formIframe" src="https://form.jotform.com/242206791092253" allowfullscreen></iframe>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var iframe = document.getElementById("formIframe");
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        });
+    </script>
 </body>
 </html>
